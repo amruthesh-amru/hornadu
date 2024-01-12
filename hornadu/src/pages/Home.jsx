@@ -1,16 +1,21 @@
+import imageGallery from "../assets/image-gallery.png";
+import donation from "../assets/donation.png";
+import onlineVideo from "../assets/online-video.png";
+import calender from "../assets/outline.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-// Import Swiper styles
 import "swiper/css";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <>
-      <div className="w-full flex flex-col gap-10 bg-light-pink">
+    <Navbar/>
+      <div className="w-full flex flex-col gap-16 bg-light-pink">
         <div className="w-[70%] my-0 mx-auto">
           <Swiper
             modules={[Autoplay, Navigation]}
@@ -98,7 +103,7 @@ function Home() {
               </ol>
             </div>
           </div>
-          <div className="bg-white w-[70%] p-3 flex flex-col gap-5">
+          <div className="bg-white w-[70%] p-3 flex flex-col gap-5 rounded-md">
             <h1 className="text-[2rem]">Announcement</h1>
             <p>
               There is something exciting coming up in this space, stay tuned !!
@@ -106,9 +111,9 @@ function Home() {
           </div>
         </div>
 
-        <div className="w-[70%]  my-0 mx-auto flex gap-3 ">
-          <div>
-            <h1>Horanadu Rathothsava - 2021</h1>
+        <div className="w-[70%]  my-0 mx-auto flex gap-3 items-start justify-center ">
+          <div className="flex flex-col gap-5">
+            <h1 className="text-[1.5rem]">Horanadu Rathothsava - 2021</h1>
             <p>
               ಹೊರನಾಡಿನಲ್ಲಿ 16/3/2021ರಲ್ಲಿ ನಡೆದ "ಶ್ರೀಮಾನ್ ಮಹಾ ರಥೋತ್ಸವ-2021"ದ
               ಪೂರ್ಣ ಕಾರ್ಯಕ್ರಮವನ್ನು ನಮ್ಮ ಯುಟೂಬ್ ಚಾನೆಲ್ನಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತಿದೆ.
@@ -116,6 +121,88 @@ function Home() {
               ಅಮ್ಮನವರ ಕೃಪೆಗೆ ಪಾತ್ರರಾಗಬೇಕೆಂದು ಕೋರುತ್ತೇವೆ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮ
               ಯುಟ್ಯೂಬ್ ಚಾನೆಲ್ ಅನ್ನು ಫಾಲೋ ಮಾಡಿ.
             </p>
+          </div>
+          <div className="rounded-md">
+            <iframe
+              className="rounded-md"
+              width="300"
+              height="238"
+              src="https://www.youtube.com/embed/da3S4ZF9Fdo"
+              title="Short Video on temple and its surroundings | Sri Kshetra | Horanadu"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className="rounded-md">
+            <iframe
+              className="rounded-md"
+              width="300"
+              height="238"
+              src="https://www.youtube.com/embed/da3S4ZF9Fdo"
+              title="Short Video on temple and its surroundings | Sri Kshetra | Horanadu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div className="w-[70%]  my-0 mx-auto flex  gap-3 items-start justify-center  text-light-black">
+          <div className="flex flex-col gap-5 w-[60%]">
+            <h1 className="text-[1.5rem]  ">Dharmakaratharu</h1>
+            <p>
+              With the blessing of his holiness Jagadhguru Shankaracharya Sri
+              Bharathitheertha Maha Swamiji of Sringeri Sharadapeetam, and in
+              the holy presence of his holiness Gokarna Mandalacharya Jagadhguru
+              Shankaracharya Sri Sri Raghavendra Bharathi Swamiji of Hosanagar
+              Matha, Karnataka, Sri G.Bheemeshwara Jhoshy sworn as the
+              hereditary "7th Dharmakartharu" of adishakthyathmaka sri
+              Annapoorneshwari temple on 21.10.1991
+            </p>
+          </div>
+          <div className=" w-[500px]">
+            <img
+              className="w-full rounded-md"
+              src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/About.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="w-[70%]  my-0 mx-auto flex  gap-10 items-center justify-center p-3 bg-dark-pink text-light-black">
+          <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5 ">
+            <div>
+              <img src={imageGallery} alt="" />
+            </div>
+            <div className="text-center">
+              Temple Images <br />
+              View Gallery
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-10 border-r border-light-black pr-5 ">
+            <div>
+              <img src={onlineVideo} alt="" />
+            </div>
+            <div className="text-center">
+              Temple Images <br />
+              View Gallery
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5">
+            <div>
+              <img src={donation} alt="" />
+            </div>
+            <div className="text-center">
+              Temple Images <br />
+              View Gallery
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-10  pr-5 ">
+            <div>
+              <img src={calender} alt="" />
+            </div>
+            <div className="text-center">
+              Temple Images <br />
+              View Gallery
+            </div>
           </div>
         </div>
       </div>
