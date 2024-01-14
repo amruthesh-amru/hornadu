@@ -7,17 +7,15 @@ import HowToReach from "./pages/HowToReach";
 import NearbyPlaces from "./pages/NearbyPlaces";
 import Temple from "./pages/Temple";
 import TempleTimings from "./pages/TempleTimings";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./appRouter";
 
 function App() {
   return (
     <>
-      {/* <Home /> */}
-      {/* <Temple/> */}
-      {/* <BookRoom /> */}
-      {/* <TempleTimings /> */}
-      {/* <HowToReach /> */}
-      {/* <NearbyPlaces /> */}
-      <BankDetails />
+      <Router>
+        <AppRouter />
+      </Router>
     </>
   );
 }

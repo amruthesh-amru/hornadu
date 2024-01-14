@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import logo from "../assets/horanadu_logo.jpeg";
+import DropDownMenu from "./DropDownMenu";
 
 function Navbar() {
   return (
@@ -22,15 +24,34 @@ function Navbar() {
       </div>
       <div className="w-full bg-dark-pink text-[17px] p-4">
         <ul className="flex items-center justify-center gap-10 ">
-          <li>Home</li>
-          <li>Temple</li>
-          <li>Sevas</li>
-          <li>News</li>
-          <li>Book Room</li>
-          <li>Info</li>
-          <li>Gallery</li>
-          <li>E-Hundi</li>
-          <li>Contact</li>
+          <NavLink to="/">
+            <li>Home</li>
+          </NavLink>
+          <NavLink to="/temple">
+            <li>Temple</li>
+          </NavLink>
+          <NavLink to="/">
+            <li>Sevas</li>
+          </NavLink>
+          <NavLink to="/">
+            <li>News</li>
+          </NavLink>
+          <NavLink to="/bookRoom">
+            <li>Book Room</li>
+          </NavLink>
+          <NavLink to="/">
+            <li className="group">Info</li>
+            <DropDownMenu attribute1="Temple Timing" />
+          </NavLink>
+          <NavLink to="/">
+            <li>Gallery</li>
+          </NavLink>
+          <NavLink to="/">
+            <li>E-Hundi</li>
+          </NavLink>
+          <NavLink to="/">
+            <li>Contact</li>
+          </NavLink>
         </ul>
       </div>
     </>
