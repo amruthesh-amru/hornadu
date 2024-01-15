@@ -21,12 +21,4 @@
 .swiper-button-next:after{
     font-size: 2rem;
 }
-.hiddenContent{
-    display: none;
-}
-.group:hover + .hiddenContent,
-.group:focus-within .hiddenContent {
-  display: block;
-}
-
 
