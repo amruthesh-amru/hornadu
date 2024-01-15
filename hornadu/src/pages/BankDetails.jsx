@@ -3,7 +3,6 @@ import Subnavbar from "../components/Subnavbar";
 function BankDetails() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink flex flex-col gap-8 ">
         <br />
         <Subnavbar title="BANK ACCOUNT DETAILS" />

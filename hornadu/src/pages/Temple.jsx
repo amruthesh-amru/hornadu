@@ -4,7 +4,6 @@ import Subnavbar from "../components/Subnavbar";
 function Temple() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink">
         <div className="flex flex-col gap-10">
           <div className="w-[70%] mx-auto my-0">

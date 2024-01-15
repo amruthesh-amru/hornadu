@@ -4,6 +4,7 @@ import Temple from "../pages/Temple";
 import BookRoom from "../pages/BookRoom";
 import HowToReach from "../pages/HowToReach";
 import TempleTimings from "../pages/TempleTimings";
+import Deities from "../pages/Deities";
 
 const AppRouter = () => {
   return (
@@ -13,7 +14,7 @@ const AppRouter = () => {
       <Route path="/bookRoom" element={<BookRoom />} />
       <Route path="/howToReach" element={<HowToReach />} />
       <Route path="/templeTiming" element={<TempleTimings />} />
-      <Route path="/" />
+      <Route path="/deities" element={<Deities />} />
     </Routes>
   );
 };

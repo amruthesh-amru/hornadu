@@ -5,7 +5,6 @@ import Subnavbar from "../components/Subnavbar";
 function TempleTimings() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink text-light-black">
         <br />
         <Subnavbar title="TEMPLE TIMINGS" />

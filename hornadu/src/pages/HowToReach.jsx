@@ -5,7 +5,6 @@ import Subnavbar from "../components/Subnavbar";
 function HowToReach() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink">
         <br />
         <Subnavbar title="HOW TO REACH" />

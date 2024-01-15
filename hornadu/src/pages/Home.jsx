@@ -10,11 +10,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <>
-    <Navbar/>
       <div className="w-full flex flex-col gap-16 bg-light-pink">
         <div className="w-[70%] my-0 mx-auto">
           <Swiper
@@ -167,7 +167,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="w-[70%]  my-0 mx-auto flex  gap-10 items-center justify-center p-3 bg-dark-pink text-light-black">
+        <div className="w-[70%]  my-0 mx-auto flex  gap-10 items-center justify-center p-3 bg-dark-pink text-light-black mb-8">
           <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5 ">
             <div>
               <img src={imageGallery} alt="" />

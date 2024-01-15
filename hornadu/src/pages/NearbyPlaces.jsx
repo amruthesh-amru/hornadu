@@ -5,7 +5,6 @@ import Subnavbar from "../components/Subnavbar";
 function NearbyPlaces() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink p-5">
         <Subnavbar title="NEAR BY PLACES" />
         <br />

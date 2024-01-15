@@ -21,4 +21,9 @@
 .swiper-button-next:after{
     font-size: 2rem;
 }
-
+.wordSpace{
+    word-spacing: 3px;
+}
+.subNav{
+    background-image: url('./assets/subNavImage.png');
+}

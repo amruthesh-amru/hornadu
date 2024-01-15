@@ -5,7 +5,6 @@ import Subnavbar from "../components/Subnavbar";
 function BookRoom() {
   return (
     <>
-      <Navbar />
       <div className="bg-light-pink flex flex-col text-light-black">
         <br />
         <Subnavbar title="BOOK ROOMS" />
