@@ -7,6 +7,7 @@ function Navbar() {
   const [dropDown, setDropDown] = useState(false);
   const [templeDropDown, setTempleDropDown] = useState(false);
   const [infoDropDown, setinfoDropDown] = useState(false);
+  const [sevaDropDown, setsevaDropDown] = useState(false);
 
   return (
     <>
@@ -33,33 +34,54 @@ function Navbar() {
             <li>Home</li>
           </NavLink>
 
-          <li
-            onMouseEnter={() => {
-              setDropDown(true);
-              setTempleDropDown(true);
-            }}
-            onMouseLeave={() => {
-              setDropDown(false);
-              setTempleDropDown(false);
-            }}
-          >
-            Temple
-            {templeDropDown && (
-              <DropDownMenu
-                dropDown={dropDown}
-                setDropDown={setDropDown}
-                attribute1="About"
-                navLink1="/temple"
-                attribute2="Deities"
-                navLink2="/deities"
-                attribute3="History"
-                navLink3="/history"
-              />
-            )}
-          </li>
+          <NavLink to="/temple">
+            <li
+              onMouseEnter={() => {
+                setDropDown(true);
+                setTempleDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setDropDown(false);
+                setTempleDropDown(false);
+              }}
+            >
+              Temple
+              {templeDropDown && (
+                <DropDownMenu
+                  dropDown={dropDown}
+                  setDropDown={setDropDown}
+                  attribute1="About"
+                  navLink1="/temple"
+                  attribute2="Deities"
+                  navLink2="/deities"
+                  attribute3="History"
+                  navLink3="/history"
+                />
+              )}
+            </li>
+          </NavLink>
 
-          <NavLink to="">
-            <li>Sevas</li>
+          <NavLink to="/sevaDetails">
+            <li
+              onMouseEnter={() => {
+                setDropDown(true);
+                setsevaDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setDropDown(false);
+                setsevaDropDown(false);
+              }}
+            >
+              Sevas
+              {sevaDropDown && (
+                <DropDownMenu
+                  dropDown={dropDown}
+                  setDropDown={setDropDown}
+                  attribute1="Seva Details"
+                  navLink1="/sevaDetails"
+                />
+              )}
+            </li>
           </NavLink>
           <NavLink to="">
             <li>News</li>
@@ -87,6 +109,10 @@ function Navbar() {
                 navLink1="/templeTiming"
                 attribute2="How To Reach"
                 navLink2="/howToReach"
+                attribute3="Nearby Places"
+                navLink3="/nearbyPlaces"
+                attribute4="Bank Details"
+                navLink4="/bankDetails"
               />
             )}
           </li>

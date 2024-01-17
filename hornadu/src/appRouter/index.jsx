@@ -8,6 +8,7 @@ import Deities from "../pages/Deities";
 import History from "../pages/History";
 import SevaDetails from "../pages/SevaDetails";
 import BankDetails from "../pages/BankDetails";
+import NearbyPlaces from "../pages/NearbyPlaces";
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
       <Route path="/history" element={<History />} />
       <Route path="/sevaDetails" element={<SevaDetails />} />
       <Route path="/bankDetails" element={<BankDetails />} />
+      <Route path="/nearbyPlaces" element={<NearbyPlaces />} />
     </Routes>
   );
 };
