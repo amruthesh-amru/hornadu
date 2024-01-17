@@ -103,7 +103,7 @@ function Home() {
               </ol>
             </div>
           </div>
-          <div className="bg-white w-[70%] p-3 flex flex-col gap-5 rounded-md">
+          <div className="bg-white w-[70%] p-3 flex flex-col gap-5 rounded-md ">
             <h1 className="text-[2rem]">Announcement</h1>
             <p>
               There is something exciting coming up in this space, stay tuned !!

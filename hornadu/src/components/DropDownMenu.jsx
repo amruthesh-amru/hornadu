@@ -17,8 +17,12 @@ function DropDownMenu({
       {dropDown && (
         <div
           className="absolute z-[2] bg-white  w-[10%]  "
-          onMouseEnter={() => setDropDown(true)}
-          onMouseLeave={() => setDropDown(false)}
+          onMouseEnter={() => {
+            setDropDown(true);
+          }}
+          onMouseLeave={() => {
+            setDropDown(false);
+          }}
         >
           {attribute1 && (
             <NavLink to={navLink1}>
@@ -26,13 +30,19 @@ function DropDownMenu({
             </NavLink>
           )}
           {attribute2 && (
-            <li className="p-3 hover:bg-light-pink subMenu">{attribute2}</li>
+            <NavLink to={navLink2}>
+              <li className="p-3 hover:bg-light-pink subMenu">{attribute2}</li>
+            </NavLink>
           )}
           {attribute3 && (
-            <li className="p-3 hover:bg-light-pink subMenu">{attribute3}</li>
+            <NavLink to={navLink3}>
+              <li className="p-3 hover:bg-light-pink subMenu">{attribute3}</li>
+            </NavLink>
           )}
           {attribute4 && (
-            <li className="p-3 hover:bg-light-pink subMenu">{attribute4}</li>
+            <NavLink to={navLink4}>
+              <li className="p-3 hover:bg-light-pink subMenu">{attribute4}</li>
+            </NavLink>
           )}
         </div>
       )}

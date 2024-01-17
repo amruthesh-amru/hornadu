@@ -16,7 +16,7 @@ function Deities() {
                 alt=""
               />
             </div>
-            <div className="w-[800px] ">
+            <div className="w-[800px] watermark ">
               <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
                 ಶ್ರೀ ಉದ್ಭವ ಗಣಪತಿ ಸ್ವಾಮೀ
               </h1>
@@ -79,7 +79,7 @@ function Deities() {
                 alt=""
               />
             </div>
-            <div className="w-[800px] ">
+            <div className="w-[800px] watermark">
               <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
                 ಶ್ರೀ ನವಗ್ರಹ ದೇವರುಗಳ ಪ್ರತಿಷ್ಠೆ
               </h1>
@@ -113,7 +113,7 @@ function Deities() {
                 alt=""
               />
             </div>
-            <div className="w-[800px] ">
+            <div className="w-[800px] watermark">
               <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
                 ಶ್ರೀ ಆಂಜನೇಯ ಸ್ವಾಮೀ ದೇವಾಲಯ ಮತ್ತು ಪ್ರತಿಷ್ಠಾ ಕಾರ್ಯಕ್ರಮ.
               </h1>
@@ -158,7 +158,7 @@ function Deities() {
                 alt=""
               />
             </div>
-            <div className="w-[800px] ">
+            <div className="w-[800px] watermark">
               <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
                 ಆದಿಶಕ್ತ್ಯಾತ್ಮಕ ಶ್ರೀ ಅನ್ನಪೂರ್ಣೇಶ್ವರೀ ಅಮ್ಮನವರ ಪ್ರತಿಷ್ಠೆ.
               </h1>

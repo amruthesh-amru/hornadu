@@ -27,3 +27,9 @@
 .subNav{
     background-image: url('./assets/subNavImage.png');
 }
+.watermark{
+    background-image: url('./assets/mandala.36cab214.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}

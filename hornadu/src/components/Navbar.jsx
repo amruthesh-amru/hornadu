@@ -5,6 +5,8 @@ import { useState } from "react";
 
 function Navbar() {
   const [dropDown, setDropDown] = useState(false);
+  const [templeDropDown, setTempleDropDown] = useState(false);
+  const [infoDropDown, setinfoDropDown] = useState(false);
 
   return (
     <>
@@ -30,9 +32,32 @@ function Navbar() {
           <NavLink to="/">
             <li>Home</li>
           </NavLink>
-          <NavLink to="/temple">
-            <li>Temple</li>
-          </NavLink>
+
+          <li
+            onMouseEnter={() => {
+              setDropDown(true);
+              setTempleDropDown(true);
+            }}
+            onMouseLeave={() => {
+              setDropDown(false);
+              setTempleDropDown(false);
+            }}
+          >
+            Temple
+            {templeDropDown && (
+              <DropDownMenu
+                dropDown={dropDown}
+                setDropDown={setDropDown}
+                attribute1="About"
+                navLink1="/temple"
+                attribute2="Deities"
+                navLink2="/deities"
+                attribute3="History"
+                navLink3="/history"
+              />
+            )}
+          </li>
+
           <NavLink to="">
             <li>Sevas</li>
           </NavLink>
@@ -42,34 +67,30 @@ function Navbar() {
           <NavLink to="/bookRoom">
             <li>Book Room</li>
           </NavLink>
-          <NavLink to="/howToReach">
-            <li
-              onMouseEnter={() => setDropDown(true)}
-              onMouseLeave={() => setDropDown(false)}
-            >
-              Info
-            </li>
 
-            {/* {dropDown && (
-              <div
-                className="absolute  bg-white  w-[10%]"
-                onMouseEnter={() => setDropDown(true)}
-                onMouseLeave={() => setDropDown(false)}
-              >
-                <li className="p-3 hover:bg-light-pink subMenu">about</li>
-                <li className="p-3 hover:bg-light-pink subMenu">about</li>
-                <li className="p-3 hover:bg-light-pink subMenu">about</li>
-              </div>
-            )} */}
-            <DropDownMenu
-              dropDown={dropDown}
-              setDropDown={setDropDown}
-              attribute1="Temple Timing"
-              navLink1="/templeTiming"
-              attribute2="How To Reach"
-              navLink2="/howToReach"
-            />
-          </NavLink>
+          <li
+            onMouseEnter={() => {
+              setDropDown(true);
+              setinfoDropDown(true);
+            }}
+            onMouseLeave={() => {
+              setDropDown(false);
+              setinfoDropDown(false);
+            }}
+          >
+            Info
+            {infoDropDown && (
+              <DropDownMenu
+                dropDown={dropDown}
+                setDropDown={setDropDown}
+                attribute1="Temple Timing"
+                navLink1="/templeTiming"
+                attribute2="How To Reach"
+                navLink2="/howToReach"
+              />
+            )}
+          </li>
+
           <NavLink to="">
             <li>Gallery</li>
           </NavLink>

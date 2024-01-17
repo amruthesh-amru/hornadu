@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Subnavbar from "../components/Subnavbar";
 function BankDetails() {
   return (
