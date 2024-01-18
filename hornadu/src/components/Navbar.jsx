@@ -7,6 +7,7 @@ function Navbar() {
   const [dropDown, setDropDown] = useState(false);
   const [templeDropDown, setTempleDropDown] = useState(false);
   const [infoDropDown, setinfoDropDown] = useState(false);
+  const [newsDropDown, setnewsDropDown] = useState(false);
   const [sevaDropDown, setsevaDropDown] = useState(false);
 
   return (
@@ -83,9 +84,30 @@ function Navbar() {
               )}
             </li>
           </NavLink>
+
           <NavLink to="">
-            <li>News</li>
+            <li
+              onMouseEnter={() => {
+                setDropDown(true);
+                setnewsDropDown(true);
+              }}
+              onMouseLeave={() => {
+                setDropDown(false);
+                setnewsDropDown(false);
+              }}
+            >
+              News
+              {newsDropDown && (
+                <DropDownMenu
+                  dropDown={dropDown}
+                  setDropDown={setDropDown}
+                  attribute1="Darshana Rules"
+                  navLink1="/darshanaRules"
+                />
+              )}
+            </li>
           </NavLink>
+
           <NavLink to="/bookRoom">
             <li>Book Room</li>
           </NavLink>
@@ -123,7 +145,7 @@ function Navbar() {
           <NavLink to="">
             <li>E-Hundi</li>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/contactUs">
             <li>Contact</li>
           </NavLink>
         </ul>

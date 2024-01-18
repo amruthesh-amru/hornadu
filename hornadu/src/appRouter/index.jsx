@@ -9,6 +9,8 @@ import History from "../pages/History";
 import SevaDetails from "../pages/SevaDetails";
 import BankDetails from "../pages/BankDetails";
 import NearbyPlaces from "../pages/NearbyPlaces";
+import DarshanaRules from "../pages/DarshanaRules";
+import ContactUs from "../pages/ContactUs";
 
 const AppRouter = () => {
   return (
@@ -23,6 +25,8 @@ const AppRouter = () => {
       <Route path="/sevaDetails" element={<SevaDetails />} />
       <Route path="/bankDetails" element={<BankDetails />} />
       <Route path="/nearbyPlaces" element={<NearbyPlaces />} />
+      <Route path="/darshanaRules" element={<DarshanaRules />} />
+      <Route path="/contactUs" element={<ContactUs />} />
     </Routes>
   );
 };

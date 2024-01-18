@@ -31,6 +31,8 @@ function Temple() {
             </p>
           </div>
         </div>
+        <br />
+        <br />
       </div>
     </>
   );
