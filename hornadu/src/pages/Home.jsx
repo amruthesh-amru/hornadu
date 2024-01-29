@@ -31,13 +31,13 @@ function Home() {
           >
             <SwiperSlide>
               <img
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/main%20slider.jpg"
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
                 alt=""
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/main%20slider%202.jpg"
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider+2.jpg"
                 alt=""
               />
             </SwiperSlide>
@@ -45,8 +45,8 @@ function Home() {
         </div>
 
         <div className="w-[70%] my-0 mx-auto ">
-          <div className="flex items-center justify-center bg-white p-3 text-light-black  rounded-lg">
-            <div className="flex flex-col gap-3 ">
+          <div className="flex items-center justify-center  bg-white p-3 text-light-black  rounded-lg">
+            <div className="flex flex-col gap-3 w-[100%]">
               <h1 className="text-[2rem]">SRIKSHETRA HORANADU</h1>
               <p className="leading-[1.75] text-[1.025rem] ">
                 “<span className="font-bold">Sri Kshetra Horanadu</span>” is
@@ -67,9 +67,9 @@ function Home() {
                 Read More
               </button>
             </div>
-            <div className=" w-full h-full">
+            <div className=" w-[30rem] h-full flex items-center justify-center p-3">
               <img
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/Old+temple+image.png"
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Old+temple+image.png"
                 alt=""
               />
             </div>

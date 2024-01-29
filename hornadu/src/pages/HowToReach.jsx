@@ -162,6 +162,7 @@ function HowToReach() {
           </div>
 
           <iframe
+            className="mb-5"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.1796095890363!2d75.34126267492388!3d13.27671388706738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbb37e060ccf5b3%3A0x74031e2d5f52c0ca!2sAdhishakthyathmaka%20Shri%20Annapurneshwari%20Devi%20Temple%20-%20(Horanadu)!5e0!3m2!1sen!2sin!4v1705154796542!5m2!1sen!2sin"
             width="full"
             height="450"

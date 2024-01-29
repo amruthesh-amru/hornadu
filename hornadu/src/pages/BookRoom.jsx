@@ -15,11 +15,11 @@ function BookRoom() {
             <div>Mobile : +91 98457 04614</div>
           </div>
           <img
-            className="rounded-md"
-            src="https://shrikshetrahoranadu.com/img/Bhadra.jpeg"
+            className="rounded-md w-[30rem] h-[20rem]"
+            src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Banner.png"
             alt=""
           />
-          <h1 className="text-[1.4rem]">Bhadra Nivas</h1>
+          <h1 className="text-[1.4rem] mb-3">Bhadra Nivas</h1>
         </div>
       </div>
     </>

@@ -9,7 +9,7 @@ function History() {
           <div className="">
             <img
               className="rounded-md mb-4"
-              src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/IMG_8484.jpg"
+              src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/About.png"
               alt=""
             />
           </div>

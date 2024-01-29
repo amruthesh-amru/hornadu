@@ -52,7 +52,14 @@ function Footer() {
                 <ul className="list-disc">
                   <li>Donate</li>
                   <li>History</li>
-                  <li>Location</li>
+                  <a
+                    href="https://www.google.com/maps/place/Adhishakthyathmaka+Shri+Annapurneshwari+Devi+Temple+-+(Horanadu)/@13.2767139,75.3412627,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbb37e060ccf5b3:0x74031e2d5f52c0ca!8m2!3d13.2767139!4d75.3438376!16zL20vMGgwd3Zy?entry=ttu"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <li>Location</li>
+                  </a>
+
                   <li>Privacy Policy</li>
                   <li>Refund Policy</li>
                 </ul>
@@ -69,26 +76,33 @@ function Footer() {
               <i className="fa-brands fa-youtube text-[#ff0000]"></i>
             </div>
             <div className="text-white flex items-center  gap-5">
-              <button
-                onClick={scrollToTop}
-                className="bg-[#33222e] pl-5 pr-3 pt-2 pb-2 rounded-md mb-2 w-[10.6rem]"
-              >
-                How To Reach
-              </button>
-              <button
-                onClick={scrollToTop}
-                className="bg-[#33222e] pl-3 pr-3 pt-2 pb-2 rounded-md mb-2  w-[10.6rem]"
-              >
-                Bank Account Details
-              </button>
+              <NavLink to="/howToReach">
+                <button
+                  onClick={scrollToTop}
+                  className="bg-[#33222e] pl-5 pr-3 pt-2 pb-2 rounded-md mb-2 w-[10.6rem]"
+                >
+                  How To Reach
+                </button>
+              </NavLink>
+              <NavLink to="/bankDetails">
+                <button
+                  onClick={scrollToTop}
+                  className="bg-[#33222e] pl-3 pr-3 pt-2 pb-2 rounded-md mb-2  w-[10.6rem]"
+                >
+                  Bank Account Details
+                </button>
+              </NavLink>
             </div>
             <div className="text-white flex items-center  gap-5 ">
-              <button
-                onClick={scrollToTop}
-                className="bg-[#33222e] pl-3 pr-3 pt-2 pb-2 rounded-md  w-[10.6rem]"
-              >
-                Temple Timings
-              </button>
+              <NavLink to="/templeTiming">
+                <button
+                  onClick={scrollToTop}
+                  className="bg-[#33222e] pl-3 pr-3 pt-2 pb-2 rounded-md  w-[10.6rem]"
+                >
+                  Temple Timings
+                </button>
+              </NavLink>
+
               <button
                 onClick={scrollToTop}
                 className="bg-[#33222e] pl-3 pr-3 pt-2 pb-2 rounded-md  w-[10.6rem]"

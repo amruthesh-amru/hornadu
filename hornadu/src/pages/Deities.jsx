@@ -12,7 +12,7 @@ function Deities() {
             <div className="w-[35rem] h-[20rem]">
               <img
                 className="w-full h-full object-cover rounded-md"
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/ganesha.JPG"
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/ganesha.JPG"
                 alt=""
               />
             </div>
@@ -108,8 +108,8 @@ function Deities() {
           <div className="flex  items-start justify-between gap-8 mt-10">
             <div className="w-[35rem] h-[20rem]">
               <img
-                className="w-full h-full object-cover rounded-md"
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/Hanuman%20Image.png"
+                className="w-full h-full object-fill rounded-md "
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Hanuman+Image.png"
                 alt=""
               />
             </div>
@@ -154,7 +154,7 @@ function Deities() {
             <div className="w-[35rem] h-[20rem]">
               <img
                 className="w-full h-full object-cover rounded-md"
-                src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/add%20image.jpg"
+                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/filler+image.jpg"
                 alt=""
               />
             </div>

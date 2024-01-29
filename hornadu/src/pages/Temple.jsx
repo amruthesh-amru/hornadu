@@ -9,7 +9,7 @@ function Temple() {
           <div className="w-[70%] mx-auto my-0">
             <img
               className="w-full h-[33rem]"
-              src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/Old+temple+image.png"
+              src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Old+temple+image.png"
               alt=""
             />
           </div>

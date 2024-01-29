@@ -131,20 +131,20 @@ function Navbar() {
                 navLink1="/templeTiming"
                 attribute2="How To Reach"
                 navLink2="/howToReach"
-                attribute3="Nearby Places"
-                navLink3="/nearbyPlaces"
+                // attribute3="Nearby Places"
+                // navLink3="/nearbyPlaces"
                 attribute4="Bank Details"
                 navLink4="/bankDetails"
               />
             )}
           </li>
 
-          <NavLink to="">
+          {/* <NavLink to="">
             <li>Gallery</li>
           </NavLink>
           <NavLink to="">
             <li>E-Hundi</li>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/contactUs">
             <li>Contact</li>
           </NavLink>
