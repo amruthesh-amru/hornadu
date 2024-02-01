@@ -10,26 +10,43 @@ function Navbar() {
   const [newsDropDown, setnewsDropDown] = useState(false);
   const [sevaDropDown, setsevaDropDown] = useState(false);
 
+  const [toggleMenu, settoggleMenu] = useState(false);
+
+  const toggleMenuHandler = () => {
+    settoggleMenu(!toggleMenu);
+  };
+
   return (
     <>
-      <div className="w-full flex items-center justify-evenly bg-light-pink text-black">
+      <div
+        className="flex gap-5 p-2 items-center justify-center md:w-full md:flex md:flex-row md:items-center md:justify-evenly md:relative bg-light-pink text-black sticky top-0  z-10"
+        onClick={() => toggleMenuHandler()}
+      >
+        <div className="md:hidden text-[1.7rem]">
+          <button onClick={() => toggleMenuHandler()}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
+        </div>
         <div className="">
-          <h1 className="text-[17px]">
+          <h1 className="md:text-[16px] text-[14px] ">
             Adhishakthyathmaka Sri Annapoorneshwari Temple
           </h1>
-          <h1 className="text-[24px] font-[600]">Sri Kshetra Horanadu</h1>
+          <h1 className="md:text-[24px] font-[600] text-center ">
+            Sri Kshetra Horanadu
+          </h1>
         </div>
-        <div className="w-[6rem] h-[6rem]">
+        <div className="w-[6rem] h-[6rem] hidden md:block">
           <img src={logo} alt="" className="w-full h-full" />
         </div>
-        <div className="flex items-end justify-end flex-col">
-          <h1 className="text-[17px]">
+        <div className="hidden text-center md:flex md:items-end md:justify-end md:flex-col">
+          <h1 className="md:text-[17px]">
             ಆದಿಶಕ್ತ್ಯಾತ್ಮಕ ಶ್ರೀ ಅನ್ನಪೂರ್ಣೇಶ್ವರಿ ದೇವಸ್ಥಾನ
           </h1>
-          <h1 className="text-[24px] font-[600]">ಶ್ರೀಕ್ಷೇತ್ರ ಹೊರನಾಡು</h1>
+          <h1 className="md:text-[24px] md:font-[600]">ಶ್ರೀಕ್ಷೇತ್ರ ಹೊರನಾಡು</h1>
         </div>
       </div>
-      <div className="w-full bg-dark-pink text-[17px]  h-[3.5rem] flex items-center justify-center">
+
+      <div className="hidden md:w-full bg-dark-pink text-[17px]  md:h-[3.5rem] md:flex md:items-center md:justify-center">
         <ul className="flex items-center justify-center gap-10 h-full">
           <NavLink to="/">
             <li>Home</li>
@@ -150,6 +167,69 @@ function Navbar() {
           </NavLink>
         </ul>
       </div>
+      {/* Mobile Menu */}
+      {toggleMenu && (
+        <div className="md:hidden h-screen w-[60%] bg-dark-pink flex items-center justify-center  text-[18px]  fixed top-[3.8rem]  z-10">
+          <ul className="flex flex-col items-center justify-start pt-10 gap-10 h-full w-full">
+            <NavLink to="/">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Home
+              </li>
+            </NavLink>
+            <NavLink to="/temple">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Temple
+              </li>
+            </NavLink>
+            <NavLink to="/sevaDetails">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Sevas
+              </li>
+            </NavLink>
+            <NavLink to="/">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                News
+              </li>
+            </NavLink>
+            <NavLink to="/bookRoom">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Book Room
+              </li>
+            </NavLink>
+            <NavLink to="/info">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Info
+              </li>
+            </NavLink>
+            <NavLink to="/contactUs">
+              <li
+                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                Contact
+              </li>
+            </NavLink>
+          </ul>
+        </div>
+      )}
     </>
   );
 }

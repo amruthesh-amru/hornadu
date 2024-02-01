@@ -4,7 +4,7 @@ import Subnavbar from "../components/Subnavbar";
 function ContactUs() {
   return (
     <>
-      <div className="bg-light-pink">
+      {/* <div className="bg-light-pink">
         <br />
         <Subnavbar title="CONTACT US" />
         <br />
@@ -38,7 +38,7 @@ function ContactUs() {
         </div>
         <br />
         <br />
-      </div>
+      </div> */}
     </>
   );
 }
