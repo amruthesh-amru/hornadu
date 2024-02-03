@@ -7,17 +7,17 @@ function Deities() {
       <div className="bg-light-pink">
         <br />
         <Subnavbar title="DEITIES" />
-        <div className="w-[70%] mx-auto my-0">
-          <div className="flex items-start justify-between gap-8 mt-10">
-            <div className="w-[35rem] h-[20rem]">
+        <div className="md:w-[70%] w-[90%] mx-auto my-0">
+          <div className="flex md:flex-row flex-col items-start justify-between gap-8 mt-10">
+            <div className="md:w-[35rem] md:h-[20rem]">
               <img
                 className="w-full h-full object-cover rounded-md"
                 src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/ganesha.JPG"
                 alt=""
               />
             </div>
-            <div className="w-[800px] watermark ">
-              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
+            <div className="md:w-[800px]  watermark ">
+              <h1 className="text-[1.6rem] md:text-left text-center font-[600] mb-3 wordSpace">
                 ಶ್ರೀ ಉದ್ಭವ ಗಣಪತಿ ಸ್ವಾಮೀ
               </h1>
               <p className="wordSpace text-justify">
@@ -71,16 +71,16 @@ function Deities() {
             </div>
           </div>
 
-          <div className="flex flex-row-reverse items-start justify-between gap-8 mt-10">
-            <div className="w-[35rem] h-[20rem]">
+          <div className="flex md:flex-row-reverse flex-col   items-start justify-between gap-8 mt-10">
+            <div className="md:w-[35rem] md:h-[20rem]">
               <img
                 className="w-full h-full object-cover rounded-md"
                 src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/filler%20image.jpg"
                 alt=""
               />
             </div>
-            <div className="w-[800px] watermark">
-              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
+            <div className="md:w-[800px] watermark">
+              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace md:text-left text-center">
                 ಶ್ರೀ ನವಗ್ರಹ ದೇವರುಗಳ ಪ್ರತಿಷ್ಠೆ
               </h1>
               <p className="wordSpace text-justify">
@@ -105,16 +105,16 @@ function Deities() {
             </div>
           </div>
 
-          <div className="flex  items-start justify-between gap-8 mt-10">
-            <div className="w-[35rem] h-[20rem]">
+          <div className="flex md:flex-row flex-col items-start justify-between gap-8 mt-10">
+            <div className="md:w-[35rem] md:h-[20rem]">
               <img
                 className="w-full h-full object-fill rounded-md "
                 src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Hanuman+Image.png"
                 alt=""
               />
             </div>
-            <div className="w-[800px] watermark">
-              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
+            <div className="md:w-[800px] watermark">
+              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace md:text-left text-center">
                 ಶ್ರೀ ಆಂಜನೇಯ ಸ್ವಾಮೀ ದೇವಾಲಯ ಮತ್ತು ಪ್ರತಿಷ್ಠಾ ಕಾರ್ಯಕ್ರಮ.
               </h1>
               <p className="wordSpace text-justify">
@@ -126,40 +126,19 @@ function Deities() {
                 ಶ್ರಿಮದ್ ಜಗದ್ಗುರು ಶಂಕರಾಚಾರ್ಯ ಗೋಕರ್ಣ ಮಂಡಲಾಧೀಶ ಶ್ರೀಮದ್ ರಾಮಚಂದ್ರಾಪುರ
                 ಮಠಾಧೀಶರಾದ ಶ್ರೀ ಶ್ರೀ ರಾಘವೇಶ್ವರ ಭಾರತೀ ಮಹಾಸ್ವಾಮಿಗಳವರ ದಿವ್ಯ ಹಸ್ತದಿಂದ
                 ನೆರವೇರಿಸಲಾಯಿತು.
-                {/* <br />
-                ಆದಿಶಕ್ತ್ಯಾತ್ಮಕ ಶ್ರೀ ಅನ್ನಪೂರ್ಣೇಶ್ವರೀ ಅಮ್ಮನವರ ಪ್ರತಿಷ್ಠೆ ದಕ್ಷಿಣ
-                ಕಾಶಿ ಎಂದು ಪ್ರಖ್ಯಾತಗೊಂಡ ಹೊರನಾಡಿನಲ್ಲಿ ಶ್ರೀ ಅಗಸ್ತ್ಯ ಮಹಾ ಮಹರ್ಷಿಗಳಿಂದ
-                ಶ್ರೀ ಅನ್ನಪೂರ್ಣ ಯಂತ್ರ ಮತ್ತು ವಿಗ್ರಹವನ್ನು ಶುಭ ಮುಹೂರ್ತದಲ್ಲಿ ತಮ್ಮ
-                ದಿವ್ಯ ಹಸ್ತದಿಂದ ಪ್ರತಿಷ್ಠಾಪಿಸಿದ್ದು ಈ ಆಲಯವು ಶಿಥಿಲಾವಸ್ಥೆಗೆ
-                ಬಂದಿದ್ದನ್ನು 5ನೇ ಧರ್ಮಕರ್ತರಾದ ದಿ|| ಶ್ರೀ ಡಿ.ಬಿ.ವೆಂಕಟಸುಬ್ಬಾ ಜೋಯಿಸರು
-                ನೂತನ ಶ್ರೀ ಚಕ್ರಾತ್ಮಕ ಶಿಲಾ ದೇಗುಲವನ್ನು ಕಟ್ಟಿಸಿದರು. ಏಕಶಿಲಾ ಪ್ರಭಾವಳಿ
-                ಸಹಿತ ಶ್ರೀ ಆದಿಶಕ್ತಿ ದೇವಿಯ ನಿರ್ಮಾಣವನ್ನು ತಮಿಳುನಾಡಿನ ಶಂಕೋಟೆ ಎಂಬ
-                ಊರಿನಲ್ಲಿ ಕೆತ್ತಿಸಿ ಹೊರನಾಡಿಗೆ ತಂದು ಶ್ರೀಮತ್ ಪ್ರಮಾಧಿ ನಾಮ ಸಂವತ್ಸರದ
-                ವೈಶಾಖ ಶುದ್ಧ ತದಿಗೆ ತಾ|| 05-05-1973 ರ ಶನಿವಾರದಂದು ಶುಭ ಬ್ರಾಹ್ಮೀ
-                ಮುಹೂರ್ತದಲ್ಲಿ (ಮೇಷ ಲಗ್ನ) ಶ್ರೀ ಆದಿಶಕ್ತಿ ದೇವಿಯ ಹಾಗೂ ರಜತ ಶ್ರೀ
-                ಚಕ್ರಯಂತ್ರ ಪ್ರತಿಷ್ಠೆಯನ್ನು ಮತ್ತು ಶ್ರೀ ಅನ್ನಪೂರ್ಣೇಶ್ವರೀ ದೇವಿಯ ಪುನರ್
-                ಪ್ರತಿಷ್ಠಾ ಮಹೋತ್ಸವವನ್ನು ದಿ|| ಶ್ರೀ ಡಿ.ಬಿ.ವೆಂಕಟಸುಬ್ಬಾ ಜೋಯಿಸ್
-                ದಂಪತಿಗಳು ತಮ್ಮ ಅಮೃತ ಹಸ್ತದಿಂದ ನೆರವೇರಿಸಿದರು.
-                <br />
-                <br />
-                ಇದೇ ಸಂವತ್ಸರದ ವೈಶಾಖ ಬಹುಳ ಷಷ್ಠಿ ತಾ|| 23-05-1973 ರ ಬುಧವಾರದಂದು
-                ಅಭಿಜಿನ್ ಮುಹೂರ್ತದಲ್ಲಿ ಶ್ರೀಮಾತೆಗೆ ಸಾಮ್ರಾಜ್ಯ ಪಟ್ಟಭಿಷೇಕ ಮಹೋತ್ಸವ ಹಾಗೂ
-                ರಥೋತ್ಸವವನ್ನು ಶೃಂಗೇರಿ ದಕ್ಷಿಣಾಮ್ನಾಯ ಶಾರದಾ ಪೀಠಾಧೀಶ್ವರರಾದ ಜಗದ್ಗುರು
-                ಶಂಕರಾಚಾರ್ಯ ಶ್ರೀ ಶ್ರೀ ಅಭಿನವ ವಿದ್ಯಾತೀರ್ಥ ಮಹಾಸ್ವಾಮಿಗಳವರ ದಿವ್ಯ
-                ಹಸ್ತದಿಂದ ನೆರವೇರಿಸಲಾಯಿತು.*/}
               </p>
             </div>
           </div>
-          <div className="flex flex-row-reverse items-start justify-between gap-8 mt-10">
-            <div className="w-[35rem] h-[20rem]">
+          <div className="flex flex-col md:flex-row-reverse items-start justify-between gap-8 mt-10">
+            <div className="md:w-[35rem] md:h-[20rem]">
               <img
                 className="w-full h-full object-cover rounded-md"
                 src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/filler+image.jpg"
                 alt=""
               />
             </div>
-            <div className="w-[800px] watermark">
-              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace">
+            <div className="md:w-[800px] watermark">
+              <h1 className="text-[1.6rem] font-[600] mb-3 wordSpace md:text-left text-center">
                 ಆದಿಶಕ್ತ್ಯಾತ್ಮಕ ಶ್ರೀ ಅನ್ನಪೂರ್ಣೇಶ್ವರೀ ಅಮ್ಮನವರ ಪ್ರತಿಷ್ಠೆ.
               </h1>
               <p className="wordSpace text-justify">

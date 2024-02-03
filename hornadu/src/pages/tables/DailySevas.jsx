@@ -1,7 +1,7 @@
 function DailyTable() {
   return (
     <>
-      <table className=" bg-white border-collapse w-full border border-slate-400 ...">
+      <table className=" bg-white border-collapse w-full border border-slate-400  ... ">
         <thead className="bg-[#33222e] text-white">
           <tr>
             <th className="border p-3   border-light-black text-[1.1rem]  ...">
@@ -288,7 +288,7 @@ function DailyTable() {
             <td className="border p-3 text-light-black border-light-black text-[1.1rem] ...">
               Udbhavaganapathi Ashtothrashatharchane
             </td>
-            <td className="border p-3 text-light-black border-light-black text-[1.1rem] ...">
+            <td className="border p-3  text-light-black border-light-black text-[1.1rem] ...">
               30-00
             </td>
           </tr>

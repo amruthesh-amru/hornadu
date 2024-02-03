@@ -6,16 +6,16 @@ function Temple() {
     <>
       <div className="bg-light-pink">
         <div className="flex flex-col gap-10">
-          <div className="w-[70%] mx-auto my-0">
+          <div className="md:w-[70%] w-[90%] mx-auto my-0">
             <img
-              className="w-full h-[33rem]"
+              className="w-full md:h-[33rem]"
               src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Old+temple+image.png"
               alt=""
             />
           </div>
           <Subnavbar title="ABOUT SRI KSHETRA" />
-          <div className="w-[68%]  my-0 mx-auto flex  gap-10 items-center justify-center p-2  text-light-black">
-            <p>
+          <div className="md:w-[68%] w-[90%]  my-0 mx-auto flex  gap-10 items-center justify-center p-2  text-light-black">
+            <p className="text-justify">
               “ <span className="font-bold">Sri Kshetra Horanadu</span> ” is
               situated on the banks of river Bhadra in a remote corner of
               Chikkamagaluru dist, Karnataka, surrounded by the natural

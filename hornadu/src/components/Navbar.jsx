@@ -102,7 +102,7 @@ function Navbar() {
             </li>
           </NavLink>
 
-          <NavLink to="">
+          <NavLink to="/darshanaRules">
             <li
               onMouseEnter={() => {
                 setDropDown(true);

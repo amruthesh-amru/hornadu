@@ -9,8 +9,8 @@ function DarshanaRules() {
         <Subnavbar title="DARSHANA RULES" />
         <br />
         <br />
-        <div className="mx-auto my-0 w-[60%]">
-          <ol className="list-decimal font-semibold">
+        <div className="mx-auto my-0 w-[90%] md:w-[60%]">
+          <ol className="list-decimal font-semibold ml-4">
             <li>Darshan Timing- 6:00 am to 9:00 pm</li>
             <li>
               The Darshan of the Sri Matha is only available for Men/ Boys
@@ -20,7 +20,7 @@ function DarshanaRules() {
           </ol>
           <br />
           <br />
-          <ol className="list-decimal font-semibold">
+          <ol className="list-decimal font-semibold ml-4">
             <li>
               ದೇವರ ದರ್ಶನಕ್ಕೆ ಬೆಳಗ್ಗೆ 6 ಗಂಟೆ ಇಂದ ರಾತ್ರಿ 9 ಗಂಟೆಯ ವರೆಗೆ ಮಾತ್ರ
               ಅವಕಾಶ.

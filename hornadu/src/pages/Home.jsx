@@ -167,7 +167,7 @@ function Home() {
               Annapoorneshwari temple on 21.10.1991
             </p>
           </div>
-          <div className=" md:w-[500px] w-[100%] h-[20rem] md:h-full">
+          <div className=" md:w-[500px] w-[100%] h-[20rem] md:h-full mb-5 md:mb-0">
             <img
               className="w-full h-full rounded-md "
               src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/About.png"

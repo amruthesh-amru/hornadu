@@ -9,7 +9,7 @@ function TempleTimings() {
         <br />
         <Subnavbar title="TEMPLE TIMINGS" />
         <div>
-          <div className="w-[67%] mx-auto my-0 p-3">
+          <div className="w-[90%] md:w-[67%] mx-auto my-0 p-3">
             <div className="flex flex-col gap-3">
               <h1 className="font-bold text-[2rem]">
                 Darshan Timings - 6:00 am to 9:00 pm

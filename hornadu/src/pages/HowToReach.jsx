@@ -8,7 +8,7 @@ function HowToReach() {
       <div className="bg-light-pink">
         <br />
         <Subnavbar title="HOW TO REACH" />
-        <div className="flex flex-col mx-auto my-0 w-[70%] gap-7">
+        <div className="flex flex-col mx-auto my-0 w-[90%] md:w-[70%] gap-7">
           <div>
             <h1 className="font-semibold mt-6 text-[1.5rem]">Reach by Road:</h1>
           </div>
@@ -104,7 +104,7 @@ function HowToReach() {
           </div>
         </div>
 
-        <div className="flex flex-col mx-auto my-0 w-[70%] gap-7">
+        <div className="flex flex-col mx-auto my-0 w-[90%] md:w-[70%] gap-7">
           <div>
             <h1 className="font-semibold mt-6 text-[1.5rem]">
               Reach by Train:

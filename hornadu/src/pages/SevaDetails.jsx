@@ -43,14 +43,14 @@ function SevaDetails() {
   return (
     <>
       <div className="bg-light-pink">
-        <div className="w-[70%] mx-auto my-0">
+        <div className="w-[90%] md:w-[70%] pb-5 mx-auto my-0">
           <br />
           <h1 className="text-[1.3rem] font-semibold ">
             Sri Kshetra Seva Details
           </h1>
           <br />
-          <div className="w-[95%] mb-4 mx-auto my-0">
-            <ul className="flex items-center justify-evenly  bg-[#33222e] text-white rounded-xl cursor-pointer">
+          <div className=" w-[100%]  mb-4 mx-auto my-0">
+            <ul className="flex text-[1rem] items-center justify-evenly  bg-[#33222e] text-white rounded-xl cursor-pointer">
               <li
                 className={`ease-in-out hover:ease-in-out duration-300  h-full w-full flex items-center justify-center p-3 rounded-lg bg-${bgColor1} text-${textColor1}`}
                 onClick={() => setCurrentSevaPage("1")}

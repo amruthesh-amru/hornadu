@@ -5,7 +5,7 @@ function History() {
   return (
     <>
       <div className="bg-light-pink text-light-black">
-        <div className="w-[70%] mx-auto my-0">
+        <div className="w-[90%] md:w-[70%] mx-auto my-0">
           <div className="">
             <img
               className="rounded-md mb-4"
@@ -15,8 +15,8 @@ function History() {
           </div>
         </div>
         <Subnavbar title="SRI KSHETRA HISTORY" />
-        <div className="w-[65%] mx-auto my-0">
-          <p className="mt-6 ">
+        <div className="w-[90%] md:w-[65%] mx-auto my-0">
+          <p className="mt-6 text-justify">
             “ <span className="font-semibold ">Sri Kshetra Horanadu</span>” is
             situated on the banks of river Bhadra in a remote corner of
             Chikkamagaluru dist, Karnataka, surrounded by natural vegetation,
@@ -58,7 +58,7 @@ function History() {
             </li>
           </ul>
           <br />
-          <p>
+          <p className="text-justify pb-6">
             The 5th Dharmakartharu late 2nd Sri D.B.Venkatasubba Jois sacrificed
             his complete life in improving not only the temple but also helped
             the surrounding village people in improving their culture. He
