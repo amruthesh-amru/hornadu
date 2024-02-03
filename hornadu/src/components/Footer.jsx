@@ -10,24 +10,34 @@ function Footer() {
   return (
     <>
       <div className="w-full bg-dark-pink p-8 ">
-        <div className="w-[85%] text-light-black mx-auto my-0 flex justify-between items-start">
+        <div className="md:w-[85%] md:[90%] text-light-black mx-auto my-0 md:flex flex md:flex-row flex-col md:justify-between md:items-start items-center justify-center gap-10">
           <div>
-            <h1 className="text-[1.4rem]">Contact Us</h1>
+            <h1 className="text-[1.4rem] md:text-left text-center">
+              Contact Us
+            </h1>
             <ul>
-              <li className="font-semibold">
+              <li className="font-semibold md:text-left text-center mt-5 md:mt-0">
                 ADHISHAKTHYATHMAKA SRI ANNAPOORNESHWARI TEMPLE, <br />
                 SHREEKHETRA HORANADU
               </li>
-              <li>Mudigere Taluk</li>
-              <li>Chikkamagaluru - Dist</li>
-              <li>Pin- 577181</li>
-              <li>Mobile: 9448282410/9900076410</li>
-              <li>Email: shriaath@gmail.com</li>
+              <li className=" md:text-left text-center">Mudigere Taluk</li>
+              <li className=" md:text-left text-center">
+                Chikkamagaluru - Dist
+              </li>
+              <li className=" md:text-left text-center">Pin- 577181</li>
+              <li className=" md:text-left text-center">
+                Mobile: 9448282410/9900076410
+              </li>
+              <li className=" md:text-left text-center">
+                Email: shriaath@gmail.com
+              </li>
             </ul>
           </div>
-          <div className="flex justify-start flex-col">
-            <h1 className="text-[1.4rem]">Quick links</h1>
-            <div className="flex items-start gap-10">
+          <div className="flex  md:items-start items-center justify-center flex-col">
+            <h1 className="text-[1.4rem] md:text-left  text-center mb-5 md:mb-0">
+              Quick links
+            </h1>
+            <div className="flex items-center justify-center gap-10">
               <div>
                 <ul className="list-disc">
                   <NavLink to="/sevaDetails">
@@ -68,8 +78,10 @@ function Footer() {
           </div>
 
           <div>
-            <h1 className="text-[1.4rem]">Follow Us</h1>
-            <div className="flex gap-5 mt-4 items-center justify-start text-[1.5rem] mb-4">
+            <h1 className="text-[1.4rem] text-center md:text-left">
+              Follow Us
+            </h1>
+            <div className="flex gap-5 mt-4 md:items-center md:justify-start items-center justify-center text-[1.5rem] mb-4 ">
               <i className="fa-brands fa-facebook-f text-[#3b5998]"></i>
               <i className="fa-brands fa-twitter text-[##55acee]"></i>
               <i className="fa-brands fa-instagram text-[#b7242a]"></i>
