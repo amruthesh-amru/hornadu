@@ -11,6 +11,7 @@ import BankDetails from "../pages/BankDetails";
 import NearbyPlaces from "../pages/NearbyPlaces";
 import DarshanaRules from "../pages/DarshanaRules";
 import ContactUs from "../pages/ContactUs";
+import Terms from "../pages/Terms";
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,7 @@ const AppRouter = () => {
       <Route path="/nearbyPlaces" element={<NearbyPlaces />} />
       <Route path="/darshanaRules" element={<DarshanaRules />} />
       <Route path="/contactUs" element={<ContactUs />} />
+      <Route path="/terms" element={<Terms />} />
     </Routes>
   );
 };

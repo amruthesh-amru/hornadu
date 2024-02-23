@@ -53,7 +53,7 @@ function Footer() {
                     <li onClick={scrollToTop}>Deities</li>
                   </NavLink>
 
-                  <NavLink to="#">
+                  <NavLink to="/terms">
                     <li onClick={scrollToTop}>Terms & Conditions</li>
                   </NavLink>
                 </ul>
@@ -61,7 +61,9 @@ function Footer() {
               <div>
                 <ul className="list-disc">
                   <li>Donate</li>
-                  <li>History</li>
+                  <NavLink to="/history">
+                    <li onClick={scrollToTop}>History</li>
+                  </NavLink>
                   <a
                     href="https://www.google.com/maps/place/Adhishakthyathmaka+Shri+Annapurneshwari+Devi+Temple+-+(Horanadu)/@13.2767139,75.3412627,17z/data=!3m1!4b1!4m6!3m5!1s0x3bbb37e060ccf5b3:0x74031e2d5f52c0ca!8m2!3d13.2767139!4d75.3438376!16zL20vMGgwd3Zy?entry=ttu"
                     target="_blank"
@@ -70,8 +72,9 @@ function Footer() {
                     <li>Location</li>
                   </a>
 
-                  <li>Privacy Policy</li>
-                  <li>Refund Policy</li>
+                  <NavLink to="/terms">
+                    <li onClick={scrollToTop}>Refund Policy</li>
+                  </NavLink>
                 </ul>
               </div>
             </div>
@@ -84,8 +87,20 @@ function Footer() {
             <div className="flex gap-5 mt-4 md:items-center md:justify-start items-center justify-center text-[1.5rem] mb-4 ">
               <i className="fa-brands fa-facebook-f text-[#3b5998]"></i>
               <i className="fa-brands fa-twitter text-[##55acee]"></i>
-              <i className="fa-brands fa-instagram text-[#b7242a]"></i>
-              <i className="fa-brands fa-youtube text-[#ff0000]"></i>
+              <a
+                href="https://www.instagram.com/srikshetrahoranadu?igsh=MXhvZDdwMHVqYXp4dQ=="
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-instagram text-[#b7242a]"></i>
+              </a>
+              <a
+                href="https://youtube.com/@SriKshetraHoranaduOfficial?si=GFQ-12DYBMsABTXU"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-youtube text-[#ff0000]"></i>
+              </a>
             </div>
             <div className="text-white flex items-center  gap-5">
               <NavLink to="/howToReach">

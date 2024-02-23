@@ -9,8 +9,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css";
+import { NavLink } from "react-router-dom";
 
 function Home() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can also use 'auto' or 'instant'
+    });
+  };
   return (
     <>
       <div className="w-full flex flex-col gap-16 bg-light-pink">
@@ -47,7 +54,7 @@ function Home() {
           <div className="md:flex items-center justify-center  bg-white p-3 text-light-black  rounded-lg">
             <div className="flex flex-col gap-3 w-[100%]">
               <h1 className="md:text-[2rem] text-[1.7rem] text-center md:text-left">
-                SRIKSHETRA HORANADU
+                SRI KSHETRA HORANADU
               </h1>
               <p className="leading-[1.75] text-[1.025rem] text-justify ">
                 “<span className="font-bold">Sri Kshetra Horanadu</span>” is
@@ -64,9 +71,14 @@ function Home() {
                 and were provided with free food {"{annaprasadam}"} and shelter
                 and it is continued till date.
               </p>
-              <button className="p-1 bg-light-black self-start text-white text-lg rounded-md">
-                Read More
-              </button>
+              <NavLink to="/history">
+                <button
+                  className="p-1 bg-light-black self-start text-white text-lg rounded-md "
+                  onClick={scrollToTop}
+                >
+                  Read More
+                </button>
+              </NavLink>
             </div>
             <div className="mt-4 w-full md:w-[30rem] h-full flex items-center justify-center p-3">
               <img
@@ -144,7 +156,7 @@ function Home() {
               className="rounded-md"
               width="300"
               height="238"
-              src="https://www.youtube.com/embed/da3S4ZF9Fdo"
+              src="https://www.youtube.com/embed/kksQ89HDdgk?si=nZJOXjC0FyQgsZdg"
               title="Short Video on temple and its surroundings | Sri Kshetra | Horanadu"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
@@ -170,7 +182,7 @@ function Home() {
           <div className=" md:w-[500px] w-[100%] h-[20rem] md:h-full mb-5 md:mb-0">
             <img
               className="w-full h-full rounded-md "
-              src="https://horanadu-app-assets.s3.ap-south-1.amazonaws.com/About.png"
+              src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/About.png"
               alt=""
             />
           </div>
@@ -190,28 +202,19 @@ function Home() {
             <div>
               <img src={onlineVideo} alt="" />
             </div>
-            <div className="text-center">
-              Temple Images <br />
-              View Gallery
-            </div>
+            <div className="text-center">Temple Videos</div>
           </div>
           <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5">
             <div>
               <img src={donation} alt="" />
             </div>
-            <div className="text-center">
-              Temple Images <br />
-              View Gallery
-            </div>
+            <div className="text-center">E-Hundi</div>
           </div>
           <div className="flex items-center justify-center gap-10  pr-5 ">
             <div>
               <img src={calender} alt="" />
             </div>
-            <div className="text-center">
-              Temple Images <br />
-              View Gallery
-            </div>
+            <div className="text-center">Events Calender</div>
           </div>
         </div>
       </div>

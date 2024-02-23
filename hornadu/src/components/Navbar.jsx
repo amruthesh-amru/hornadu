@@ -31,7 +31,7 @@ function Navbar() {
           <h1 className="md:text-[16px] text-[14px] ">
             Adhishakthyathmaka Sri Annapoorneshwari Temple
           </h1>
-          <h1 className="md:text-[24px] font-[600] text-center ">
+          <h1 className="md:text-[24px] font-[600] md:text-left text-center ">
             Sri Kshetra Horanadu
           </h1>
         </div>
