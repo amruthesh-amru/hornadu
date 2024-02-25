@@ -11,15 +11,30 @@ function Navbar() {
   const [sevaDropDown, setsevaDropDown] = useState(false);
 
   const [toggleMenu, settoggleMenu] = useState(false);
+  const [subtoggleMenu1, setsubtoggleMenu1] = useState(false);
+  const [subtoggleMenu, setsubtoggleMenu] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const toggleMenuHandler = () => {
     settoggleMenu(!toggleMenu);
   };
-
+  const handleBothMenus = () => {
+    setsubtoggleMenu(!subtoggleMenu);
+    settoggleMenu(!toggleMenu);
+  };
+  const handleBothMenus1 = () => {
+    setsubtoggleMenu1(!subtoggleMenu1);
+    settoggleMenu(!toggleMenu);
+  };
   return (
     <>
       <div
-        className="flex gap-5 p-2 items-center justify-center md:w-full md:flex md:flex-row md:items-center md:justify-evenly md:relative bg-light-pink text-black sticky top-0  z-10"
+        className="flex gap-5 p-2 items-center justify-evenly md:w-full md:flex md:flex-row md:items-center md:justify-evenly md:relative bg-light-pink text-black sticky top-0  z-10"
         onClick={() => toggleMenuHandler()}
       >
         <div className="md:hidden text-[1.7rem]">
@@ -169,59 +184,106 @@ function Navbar() {
       </div>
       {/* Mobile Menu */}
       {toggleMenu && (
-        <div className="md:hidden h-screen w-[60%] bg-dark-pink flex items-center justify-center  text-[18px]  fixed top-[3.8rem]  z-10">
-          <ul className="flex flex-col items-center justify-start pt-10 gap-10 h-full w-full">
-            <NavLink to="/">
+        <div className="md:hidden h-screen w-[60%] bg-dark-pink flex items-center justify-center  text-[22px]  fixed top-[3.8rem] p-2 z-10">
+          <ul className="flex flex-col  items-start p-2 justify-start pt-10 gap-7 h-full w-full">
+            <NavLink to="/" onClick={() => scrollToTop()}>
               <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
                 onClick={() => toggleMenuHandler()}
               >
                 Home
               </li>
             </NavLink>
-            <NavLink to="/temple">
-              <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
-                onClick={() => toggleMenuHandler()}
+
+            <div className="flex flex-col  w-full">
+              <div
+                className="flex justify-between w-full items-center gap-10"
+                onClick={() => setsubtoggleMenu(!subtoggleMenu)}
               >
-                Temple
-              </li>
-            </NavLink>
-            <NavLink to="/sevaDetails">
+                <div className="w-full">Temple</div>
+                <div className="w-full flex items-end justify-end">
+                  {subtoggleMenu ? (
+                    <i className="fa-solid fa-chevron-up"></i>
+                  ) : (
+                    <i className="fa-solid fa-chevron-down"></i>
+                  )}
+                </div>
+              </div>
+              {subtoggleMenu && (
+                <ul className="p-2 flex flex-col ml-4 gap-2 text-[1.3rem]">
+                  <NavLink to="/temple" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus()}>About</li>
+                  </NavLink>
+                  <NavLink to="/deities" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus()}>Deities</li>
+                  </NavLink>
+                  <NavLink to="/history" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus()}>History</li>
+                  </NavLink>
+                </ul>
+              )}
+            </div>
+
+            {/* <li
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
+                // onClick={() => toggleMenuHandler()}
+              ></li> */}
+
+            <NavLink to="/sevaDetails" onClick={() => scrollToTop()}>
               <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
                 onClick={() => toggleMenuHandler()}
               >
                 Sevas
               </li>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/darshanaRules" onClick={() => scrollToTop()}>
               <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
                 onClick={() => toggleMenuHandler()}
               >
                 News
               </li>
             </NavLink>
-            <NavLink to="/bookRoom">
+            <NavLink to="/bookRoom" onClick={() => scrollToTop()}>
               <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
                 onClick={() => toggleMenuHandler()}
               >
                 Book Room
               </li>
             </NavLink>
-            <NavLink to="/info">
-              <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
-                onClick={() => toggleMenuHandler()}
+            <div className="flex flex-col  w-full">
+              <div
+                className="flex justify-between w-full items-center gap-10"
+                onClick={() => setsubtoggleMenu1(!subtoggleMenu1)}
               >
-                Info
-              </li>
-            </NavLink>
-            <NavLink to="/contactUs">
+                <div className="w-full">Information</div>
+                <div className="w-full flex items-end justify-end">
+                  {subtoggleMenu1 ? (
+                    <i className="fa-solid fa-chevron-up"></i>
+                  ) : (
+                    <i className="fa-solid fa-chevron-down"></i>
+                  )}
+                </div>
+              </div>
+              {subtoggleMenu1 && (
+                <ul className="p-2 flex flex-col ml-4 gap-2 text-[1.3rem]">
+                  <NavLink to="/templeTiming" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus1()}>Temple Timing</li>
+                  </NavLink>
+                  <NavLink to="/howToReach" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus1()}>How To Reach</li>
+                  </NavLink>
+                  <NavLink to="/bankDetails" onClick={() => scrollToTop()}>
+                    <li onClick={() => handleBothMenus1()}>Bank Details</li>
+                  </NavLink>
+                </ul>
+              )}
+            </div>
+            <NavLink to="/contactUs" onClick={() => scrollToTop()}>
               <li
-                className="w-[15.6rem] items-center justify-center h-full flex active:bg-light-pink"
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
                 onClick={() => toggleMenuHandler()}
               >
                 Contact

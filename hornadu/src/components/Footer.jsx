@@ -4,7 +4,7 @@ function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // You can also use 'auto' or 'instant'
+      behavior: "smooth",
     });
   };
   return (
