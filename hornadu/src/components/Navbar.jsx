@@ -180,6 +180,9 @@ function Navbar() {
           <NavLink to="/contactUs">
             <li>Contact</li>
           </NavLink>
+          <NavLink to="/ehundicontainer">
+            <li>E-Hundi</li>
+          </NavLink>
         </ul>
       </div>
       {/* Mobile Menu */}
@@ -287,6 +290,14 @@ function Navbar() {
                 onClick={() => toggleMenuHandler()}
               >
                 Contact
+              </li>
+            </NavLink>
+            <NavLink to="/ehundicontainer" onClick={() => scrollToTop()}>
+              <li
+                className="w-full items-center justify-center h-full flex active:bg-light-pink"
+                onClick={() => toggleMenuHandler()}
+              >
+                E-Hundi
               </li>
             </NavLink>
           </ul>

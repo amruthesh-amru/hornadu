@@ -12,6 +12,8 @@ import NearbyPlaces from "../pages/NearbyPlaces";
 import DarshanaRules from "../pages/DarshanaRules";
 import ContactUs from "../pages/ContactUs";
 import Terms from "../pages/Terms";
+import Ehundi from "../pages/Ehundi";
+import EhundiContainer from "../pages/EhundiContainer";
 
 const AppRouter = () => {
   return (
@@ -29,6 +31,7 @@ const AppRouter = () => {
       <Route path="/darshanaRules" element={<DarshanaRules />} />
       <Route path="/contactUs" element={<ContactUs />} />
       <Route path="/terms" element={<Terms />} />
+      <Route path="/ehundicontainer" element={<EhundiContainer />} />
     </Routes>
   );
 };
