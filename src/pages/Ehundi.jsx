@@ -17,7 +17,7 @@ function Ehundi() {
   //   };
   const attachCheckoutScript = () => {
     const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.src = "http://checkout.razorpay.com/v1/checkout.js";
     script.async = true;
     script.id = "rzp";
     document.body.appendChild(script);
@@ -28,7 +28,7 @@ function Ehundi() {
 
   const paymentHandler = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://52.66.243.132:5000/order", {
+    const response = await fetch("https://52.66.243.132:5000/order", {
       method: "POST",
       body: JSON.stringify({
         amount,
