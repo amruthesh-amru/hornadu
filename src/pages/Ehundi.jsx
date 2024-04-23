@@ -8,7 +8,7 @@ function Ehundi() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
-  const [amountinpaise, setAmountinpaise] = useState();
+  // const [amountinpaise, setAmountinpaise] = useState();
   const [amount, setAmount] = useState();
   const [email, setEmail] = useState("");
   const [remark, setRemark] = useState("");
@@ -42,6 +42,7 @@ function Ehundi() {
     const order = await response.json();
 
     var options = {
+      // key: "rzp_live_Uwv7op9wsrDA89",
       key: "rzp_test_Xv0iMXBdOLAZxD",
       amount,
       currency,
