@@ -42,8 +42,8 @@ function Ehundi() {
     const order = await response.json();
 
     var options = {
-      // key: "rzp_live_Uwv7op9wsrDA89",
-      key: "rzp_test_Xv0iMXBdOLAZxD",
+      key: "rzp_live_Uwv7op9wsrDA89",
+      // key: "rzp_test_Xv0iMXBdOLAZxD",
       amount,
       currency,
       name: "Sri Kshetra Horanadu",
@@ -58,7 +58,7 @@ function Ehundi() {
 
         const validateRes = await fetch(
           //   "http://3.110.49.106:5000/order/validate",
-          "http://52.66.243.132/order/validate",
+          "https://52.66.243.132/order/validate",
           {
             method: "POST",
             body: JSON.stringify(body),
