@@ -28,7 +28,7 @@ function Ehundi() {
 
   const paymentHandler = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/order", {
+    const response = await fetch("http://52.66.243.132:5000/order", {
       method: "POST",
       body: JSON.stringify({
         amount,
@@ -40,16 +40,16 @@ function Ehundi() {
       },
     });
     const order = await response.json();
-    console.log(order);
 
     var options = {
-      key: "rzp_test_Xv0iMXBdOLAZxD", // Enter the Key ID generated from the Dashboard
-      amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      key: "rzp_test_Xv0iMXBdOLAZxD",
+      amount,
       currency,
-      name: "Sri Kshetra Horanadu", //your business name
-      description: "Test Transaction",
-      image: "../assets/horanadu_logo.jpeg",
-      order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      name: "Sri Kshetra Horanadu",
+      description: "E-Hundi",
+      image:
+        "https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/horanadu_logo.jpeg",
+      order_id: order.id,
       handler: async function (response) {
         const body = {
           ...response,
@@ -57,7 +57,7 @@ function Ehundi() {
 
         const validateRes = await fetch(
           //   "http://3.110.49.106:5000/order/validate",
-          "http://localhost:5000/order/validate",
+          "http://52.66.243.132/order/validate",
           {
             method: "POST",
             body: JSON.stringify(body),
@@ -70,10 +70,9 @@ function Ehundi() {
         console.log(jsonRes);
       },
       prefill: {
-        //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
-        name: name, //your customer's name
+        name: name,
         email: email,
-        contact: phone, //Provide the customer's phone number for better conversion rates
+        contact: phone,
       },
       notes: {
         name: name,
@@ -85,7 +84,6 @@ function Ehundi() {
       },
     };
     var rzp1 = new window.Razorpay(options);
-    console.log(options, "optionssss");
     rzp1.on("payment.failed", function (response) {
       alert(response.error.code);
       alert(response.error.description);
@@ -102,10 +100,7 @@ function Ehundi() {
       <div className="container mx-auto ">
         <div className="flex justify-center px-6 p-8">
           <div className="w-full xl:w-3/4 lg:w-11/12 flex">
-            <div
-              className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2  bg-cover rounded-l-lg object-cover"
-              //   style="background-image: url('https://source.unsplash.com/K4mSJ7kc0As/600x800')"
-            >
+            <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2  bg-cover rounded-l-lg object-cover">
               <img
                 src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
                 alt=""
@@ -187,14 +182,7 @@ function Ehundi() {
                     onChange={(e) => setRemark(e.target.value)}
                   />
                 </div>
-                {/* <div className="mb-4">
-                  <input
-                    className="mr-2 leading-tight"
-                    type="checkbox"
-                    id="checkbox_id"
-                  />
-                  <label className="text-sm">Remember Me</label>
-                </div> */}
+
                 <div className="mb-4">
                   <label className="block mb-2 text-sm font-bold text-gray-700">
                     Amount

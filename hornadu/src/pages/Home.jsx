@@ -204,12 +204,14 @@ function Home() {
             </div>
             <div className="text-center">Temple Videos</div>
           </div>
-          <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5">
-            <div>
-              <img src={donation} alt="" />
+          <NavLink to="/ehundicontainer">
+            <div className="flex items-center justify-center gap-10 border-r border-light-black  pr-5">
+              <div>
+                <img src={donation} alt="" />
+              </div>
+              <div className="text-center">E-Hundi</div>
             </div>
-            <div className="text-center">E-Hundi</div>
-          </div>
+          </NavLink>
           <div className="flex items-center justify-center gap-10  pr-5 ">
             <div>
               <img src={calender} alt="" />
