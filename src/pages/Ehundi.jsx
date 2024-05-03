@@ -28,17 +28,22 @@ function Ehundi() {
 
   const paymentHandler = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://52.66.243.132:5000/order", {
-      method: "POST",
-      body: JSON.stringify({
-        amount,
-        currency,
-        receipt: uuidv4(),
-      }),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
+    const response = await fetch(
+      // "http://52.66.243.132:5000/order",
+      // "https://backend.srikshetrahoranadu.com:5000/order",
+      "http://localhost:5000/order/validate",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          amount,
+          currency,
+          receipt: uuidv4(),
+        }),
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
     const order = await response.json();
 
     var options = {
@@ -58,7 +63,9 @@ function Ehundi() {
 
         const validateRes = await fetch(
           //   "http://3.110.49.106:5000/order/validate",
-          "https://52.66.243.132/order/validate",
+          // "http://52.66.243.132/order/validate",
+          // "https://backend.srikshetrahoranadu.com:5000/order/validate",
+          "http://localhost:5000/order/validate",
           {
             method: "POST",
             body: JSON.stringify(body),
