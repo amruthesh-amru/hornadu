@@ -17,7 +17,7 @@ function Ehundi() {
   //   };
   const attachCheckoutScript = () => {
     const script = document.createElement("script");
-    script.src = "http://checkout.razorpay.com/v1/checkout.js";
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
     script.async = true;
     script.id = "rzp";
     document.body.appendChild(script);
@@ -30,8 +30,8 @@ function Ehundi() {
     e.preventDefault();
     const response = await fetch(
       // "http://52.66.243.132:5000/order",
-      // "https://backend.srikshetrahoranadu.com:5000/order",
-      "http://localhost:5000/order/validate",
+      "https://backend.srikshetrahoranadu.com/order",
+      // "http://localhost:5000/order",
       {
         method: "POST",
         body: JSON.stringify({
@@ -64,8 +64,8 @@ function Ehundi() {
         const validateRes = await fetch(
           //   "http://3.110.49.106:5000/order/validate",
           // "http://52.66.243.132/order/validate",
-          // "https://backend.srikshetrahoranadu.com:5000/order/validate",
-          "http://localhost:5000/order/validate",
+          "https://backend.srikshetrahoranadu.com/order/validate",
+          // "http://localhost:5000/order/validate",
           {
             method: "POST",
             body: JSON.stringify(body),
