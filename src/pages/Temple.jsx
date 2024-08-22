@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Subnavbar from "../components/Subnavbar";
+import aboutImage from "../assets/Old temple image.png";
 function Temple() {
   return (
     <>
@@ -9,7 +10,8 @@ function Temple() {
           <div className="md:w-[70%] w-[90%] mx-auto my-0">
             <img
               className="w-full md:h-[33rem]"
-              src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Old+temple+image.png"
+              src={aboutImage}
+              // src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/Old+temple+image.png"
               alt=""
             />
           </div>

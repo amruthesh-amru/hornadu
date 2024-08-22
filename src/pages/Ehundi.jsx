@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import mainImage from "../assets/main slider.jpg";
 function Ehundi() {
   //   const amount = 15 * 100;
   const currency = "INR";
@@ -110,7 +111,8 @@ function Ehundi() {
           <div className="w-full xl:w-3/4 lg:w-11/12 flex">
             <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2  bg-cover rounded-l-lg object-cover">
               <img
-                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
+                src={mainImage}
+                // src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
                 alt=""
                 className="object-cover h-full"
               />

@@ -10,7 +10,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css";
 import { NavLink } from "react-router-dom";
-
+import sliderImage1 from "../assets/main slider.jpg";
+import sliderImage2 from "../assets/main slider 2.jpg";
 function Home() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -21,7 +22,7 @@ function Home() {
   return (
     <>
       <div className="w-full flex flex-col gap-16 bg-light-pink">
-        <div className="md:w-[70%] w-[90%]  my-0 mx-auto">
+        <div className="md:w-[70%] w-[90%] h- my-0 mx-auto">
           <Swiper
             modules={[Autoplay, Navigation]}
             spaceBetween={50}
@@ -35,14 +36,16 @@ function Home() {
           >
             <SwiperSlide>
               <img
-                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
+                // src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider.jpg"
+                src={sliderImage1}
                 alt=""
                 className="h-[30rem] object-cover md:h-full md:w-full"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider+2.jpg"
+                src={sliderImage2}
+                // src="https://hornadu-images.s3.us-west-2.amazonaws.com/hornadu+images/main+slider+2.jpg"
                 alt=""
                 className="h-[30rem] object-cover md:h-full md:w-full"
               />
@@ -148,7 +151,7 @@ function Home() {
               title="Short Video on temple and its surroundings | Sri Kshetra | Horanadu"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="rounded-md">
@@ -159,7 +162,7 @@ function Home() {
               src="https://www.youtube.com/embed/kksQ89HDdgk?si=nZJOXjC0FyQgsZdg"
               title="Short Video on temple and its surroundings | Sri Kshetra | Horanadu"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
